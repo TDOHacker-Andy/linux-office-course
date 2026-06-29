@@ -8,7 +8,7 @@
   "steps": [
     {
       "title": "任務開始",
-      "text": "step1.md"
+      "markdown": "step1.md"
     }
   ]
 }
