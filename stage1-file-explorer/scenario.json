@@ -1,6 +1,5 @@
 {
-  "title": "行政關卡一：拯救前任留下的交接混乱",
-  "description": "學習在沒有滑鼠的情況下探索目錄、尋找隱藏的年度預算表。",
+  "title": "行政關卡一：拯救前任留下的交接混亂",
   "type": "challenge",
   "backend": {
     "image": "ubuntu"
