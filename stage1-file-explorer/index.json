@@ -15,13 +15,7 @@
       { "title": "Step 3: 連續建檔", "text": "step3.md" },
       { "title": "Step 4: 解壓與時間戳", "text": "step4.md" },
       { "title": "Step 5: 搬移與刪除", "text": "step5.md" },
-      { "title": "Step 6: 資料過濾", "text": "step6.md" },
-      { "title": "Step 7: 資料切割與管線", "text": "step7.md" },
-      { "title": "Step 8: 批次替換", "text": "step8.md" },
-      { "title": "Step 9: 使用者帳號管理", "text": "step9.md" },
-      { "title": "Step 10: 權限與防誤刪", "text": "step10.md" },
-      { "title": "Step 11: 權限驗證測試", "text": "step11.md" },
-      { "title": "Step 12: 終極自動化劇本", "text": "step12.md" }
+      
     ],
     "finish": {
       "text": "finish.md"
