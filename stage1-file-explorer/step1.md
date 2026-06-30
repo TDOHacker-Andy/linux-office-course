@@ -1,4 +1,21 @@
 歡迎來到 Linux 的世界！這個黑底白字的視窗叫做 **Shell（命令列介面）**。不要被它空空的外表嚇到了，它其實就是一個「只聽指令辦事」的超高效祕書。
+### 🚀 任務啟動：一鍵生成業務部混亂專案
+主管剛把混亂的檔案發過來了！請**用滑鼠點擊下方灰色方塊**，這行指令會自動在你的辦公桌上建立我們接下來幾關要用的所有大魔王檔案：
+
+```bash
+mkdir -p confusing_project/reports/2025 confusing_project/download && touch confusing_project/reports/2025/meeting_notes.txt confusing_project/reports/2025/office_supply_list.txt confusing_project/download/invoice_temp.csv && cat << 'EOF' > confusing_project/taiwan_customers.txt
+ID,Name,Region,Sales
+1,Andy,Taipei,50000
+2,Bella,Hualien,12000
+3,Chris,Taichung,45000
+4,David,Kaohsiung,30000
+5,Eva,Hualien,8000
+6,Frank,Taipei,90000
+7,Grace,Tainan,15000
+8,Henry,Hualien,25000
+EOF
+for i in {1..200}; do echo "$((i+8)),User_$i,Taipei,$((RANDOM%50000+10000))" >> confusing_project/taiwan_customers.txt; echo "$((i+1000)),Hualien_User_$i,Hualien,$((RANDOM%30000+5000))" >> confusing_project/taiwan_customers.txt; done && echo "王小明,180hr,28800元" > confusing_project/工讀生時報表.txt && echo "李小美,160hr,25600元" >> confusing_project/工讀生時報表.txt && echo -e "\n🎉 【環境初始化成功！】\n主管交代的 confusing_project 資料夾已經送達你的辦公桌，請繼續往下閱讀講義。"
+
 >🔍 觀念打底：練習看懂畫面的「暗號」
 在動手打字前，請先看看你右邊黑色視窗的最後一行，是不是長類似這樣：
 `root@ubuntu:~$ `
