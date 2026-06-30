@@ -1,0 +1,38 @@
+{
+  "title": "辦公室自動化實戰：從基礎到一鍵下班",
+  "description": "學習 Linux 指令並實作自動化報表處理流程，協助行政人員高效完成跨部門專案。",
+  "type": "challenge",
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "background": {
+    "script": "background.sh"
+  },
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1: 確認帳號與路徑",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2: 檔案清點與識破",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3: 連續建檔",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4: 解壓與時間戳",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5: 搬移與刪除",
+        "text": "step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}
