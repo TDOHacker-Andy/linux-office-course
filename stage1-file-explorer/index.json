@@ -1,19 +1,54 @@
 {
-  "title": "辦公室自動化實戰：從基礎到一鍵下班",
-  "description": "學習 Linux 指令並實作自動化報表處理流程，協助行政人員高效完成跨部門專案。",
-  "type": "challenge",
+  "title": "Linux 辦公室升級營：零基礎到會議室登記系統",
+  "description": "從完全不會打開終端機，到親手做出一個可以帶回辦公室使用的會議室/設備借用登記系統。涵蓋 Linux 常用指令、檔案與目錄操作、權限管理、帳號管理、套件安裝五大主題。",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "step00/background.sh"
+    },
+    "steps": [
+      { "title": "Step 1：這個黑黑的畫面到底是什麼？", "text": "step01/step01.md" },
+      { "title": "Step 2：我是誰？我在哪？", "text": "step02/step02.md" },
+      { "title": "Step 3：看清單", "text": "step03/step03.md" },
+      { "title": "Step 4：移動位置", "text": "step04/step04.md" },
+      { "title": "Step 5：高手的偷吃步", "text": "step05/step05.md" },
+      { "title": "Step 6：建立資料夾", "text": "step06/step06.md" },
+      { "title": "Step 7：建立檔案的兩種方法", "text": "step07/step07.md" },
+      { "title": "Step 8：看懂檔案內容", "text": "step08/step08.md" },
+      { "title": "Step 9：複製檔案", "text": "step09/step09.md" },
+      { "title": "Step 10：搬家與改名", "text": "step10/step10.md" },
+      { "title": "Step 11：刪除的勇氣與風險", "text": "step11/step11.md" },
+      { "title": "Step 12：找東西", "text": "step12/step12.md" },
+      { "title": "Step 13：grep 搜尋關鍵字", "text": "step13/step13.md" },
+      { "title": "Step 14：Pipe 與 awk", "text": "step14/step14.md" },
+      { "title": "Step 15：sed 文字取代", "text": "step15/step15.md" },
+      { "title": "Step 16：看懂 rwx 暗號", "text": "step16/step16.md" },
+      { "title": "Step 17：chmod 數字法", "text": "step17/step17.md" },
+      { "title": "Step 18：sudo", "text": "step18/step18.md" },
+      { "title": "Step 19：useradd 與 passwd", "text": "step19/step19.md" },
+      { "title": "Step 20：su 切換身份", "text": "step20/step20.md" },
+      { "title": "Step 21：/etc/passwd", "text": "step21/step21.md" },
+      { "title": "Step 22：apt update", "text": "step22/step22.md" },
+      { "title": "Step 23：apt install", "text": "step23/step23.md" },
+      { "title": "Step 24：期末專題啟動", "text": "step24/step24.md" },
+      { "title": "Step 25：建立基礎資料", "text": "step25/step25.md" },
+      { "title": "Step 26：新增借用功能", "text": "step26/step26.md" },
+      { "title": "Step 27：查詢借用功能", "text": "step27/step27.md" },
+      { "title": "Step 28：使用統計功能", "text": "step28/step28.md" },
+      { "title": "Step 29：取消借用功能", "text": "step29/step29.md" },
+      { "title": "Step 30：權限保護", "text": "step30/step30.md" },
+      { "title": "Step 31：雙帳號實測", "text": "step31/step31.md" },
+      { "title": "Step 32：終極整合與結案", "text": "step32/step32.md" }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
   "backend": {
     "imageid": "ubuntu"
   },
-  "background": {
-    "script": "background.sh"
-  },
-  "details": {
-    "steps": [
-      {
-        "title": "Step 1: 確認帳號與路徑",
-        "text": "step1.md"
-      }
-    ]
+  "environment": {
+    "uilayout": "terminal",
+    "uisettings": ""
   }
 }
