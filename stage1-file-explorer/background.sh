@@ -1,39 +1,7 @@
 #!/bin/bash
 
-# 把戰場設定在所有權限都能讀寫的公共暫存區 /tmp
-TARGET_DIR="/tmp/confusing_project"
+# 確保環境正常啟動
+echo "Killercoda 環境初始化中..."
 
-# 建立第一關的專案戰場
-mkdir -p "${TARGET_DIR}/reports/2025"
-mkdir -p "${TARGET_DIR}/download"
-
-# 放入前任留下來的雜物檔案
-touch "${TARGET_DIR}/reports/2025/meeting_notes.txt"
-touch "${TARGET_DIR}/reports/2025/office_supply_list.txt"
-touch "${TARGET_DIR}/download/invoice_temp.csv"
-
-# 佈置第二關的大魔王：全台客戶文字報表
-cat << 'EOF' > "${TARGET_DIR}/taiwan_customers.txt"
-ID,Name,Region,Sales
-1,Andy,Taipei,50000
-2,Bella,Hualien,12000
-3,Chris,Taichung,45000
-4,David,Kaohsiung,30000
-5,Eva,Hualien,8000
-6,Frank,Taipei,90000
-7,Grace,Tainan,15000
-8,Henry,Hualien,25000
-EOF
-
-# 複製大量假資料
-for i in {1..200}; do
-  echo "$((i+8)),User_$i,Taipei,$((RANDOM%50000+10000))" >> "${TARGET_DIR}/taiwan_customers.txt"
-  echo "$((i+1000)),Hualien_User_$i,Hualien,$((RANDOM%30000+5000))" >> "${TARGET_DIR}/taiwan_customers.txt"
-done
-
-# 佈置第三關要鎖上的機密：工讀生時報表
-echo "王小明,180hr,28800元" > "${TARGET_DIR}/工讀生時報表.txt"
-echo "李小美,160hr,25600元" >> "${TARGET_DIR}/工讀生時報表.txt"
-
-# 確保所有人都能自由存取
-chmod -R 777 "$TARGET_DIR"
+# 這裡保持空白，所有檔案改由學員在講義第一頁點擊按鈕手動生成，確保 100% 成功。
+exit 0
