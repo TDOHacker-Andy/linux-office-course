@@ -1,4 +1,5 @@
 #!/bin/bash
+apt-get update && apt-get install -y zip
 # 確保目錄存在
 mkdir -p /root/confusing_project/reports/2025
 mkdir -p /root/confusing_project/download
