@@ -1,3 +1,70 @@
+Killercoda Foundation 腳本，請先複製以下內容並於終端執行
+set -e
+cd /root
+
+# ------------------------------------------------------------
+# 練習場：office_drill
+# ------------------------------------------------------------
+mkdir -p office_drill/download
+cd office_drill
+
+# 客戶清單（CSV），稍後壓縮進 customers.zip，供 grep / awk 練習
+cat > /tmp/taiwan_customers.txt << 'EOF'
+姓名,城市,電話,業績金額
+王小明,台北,0912345678,85000
+陳美玲,花蓮,0922334455,42000
+李大華,台中,0933445566,67000
+張淑芬,花蓮,0944556677,53000
+林志成,高雄,0955667788,91000
+黃秀英,花蓮,0966778899,38000
+吳建宏,台南,0977889900,72000
+劉雅雯,花蓮,0988990011,46000
+蔡明哲,新竹,0911223344,58000
+楊麗華,花蓮,0922113344,61000
+EOF
+( cd download && zip -q customers.zip /tmp/taiwan_customers.txt -j )
+rm -f /tmp/taiwan_customers.txt
+
+# 沒有副檔名的「黑戶檔案」，其實是純文字會議記錄，供 file / cat / less 練習
+cat > download/unknown_file << 'EOF'
+[會議記錄] 2026/06/26 行政部週五例會
+1. 本週加班申請共 7 件，待簽核。
+2. 影印機耗材需於下週一前補貨。
+3. 茶水間咖啡機故障，已通報總務。
+4. 暑期實習生將於下週三報到，需準備帳號與電腦。
+EOF
+
+# 工讀生週報，內含多處「加班」字眼，供 sed 練習
+cat > part_time_weekly_report.txt << 'EOF'
+工讀生週報彙整
+---------------
+小美：本週加班 3 小時，協助整理客戶資料。
+小強：本週加班 2 小時，支援活動布置。
+小芳：本週無加班，準時完成日常文書工作。
+小傑：本週加班 5 小時，加班原因為月底結算。
+備註：加班申請請於隔週一前送出，逾期不予計算加班費。
+EOF
+
+# 給 cp / mv / rm 練習用的雜物資料夾
+mkdir -p old_files
+echo "這是一份已經過期、可以刪除的舊備忘錄。" > old_files/expired_memo.txt
+echo "這是一份還在使用中的待辦清單。" > old_files/todo_list.txt
+
+# 給 find / 萬用字元練習：散落在不同資料夾的同類型檔案
+mkdir -p archive/2025_q4 archive/2025_q3
+echo "2025 Q4 業績摘要" > archive/2025_q4/summary.log
+echo "2025 Q3 業績摘要" > archive/2025_q3/summary.log
+echo "2025 Q4 會議紀要" > archive/2025_q4/minutes.txt
+
+# 給權限管理（chmod / sudo）練習用的共用資料夾
+mkdir -p /tmp/share_box
+chmod 1777 /tmp/share_box
+
+cd /root
+apt-get update -y -qq || true
+
+echo "✅ 練習場 office_drill 已經準備完成，開始上課吧！"
+
 # Step 1：這個黑黑的畫面到底是什麼？
 
 歡迎來到這堂課！如果你完全沒有寫過程式、沒碰過 Linux，**這正是為你設計的起點**，請放心，我們會非常慢、非常仔細地一步一步來。
