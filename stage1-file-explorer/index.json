@@ -5,6 +5,10 @@
   "backend": {
     "imageid": "ubuntu"
   },
+  "background": {
+    "script": "background.sh"
+  },
+  },
   "details": {
     "steps": [
       {
