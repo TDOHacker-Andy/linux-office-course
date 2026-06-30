@@ -1,14 +1,26 @@
 {
-  "title": "行政關卡一：拯救前任留下的交接混亂",
-  "description": "學習在沒有滑鼠的情況下探索目錄",
+  "title": "第一關：初探資安堡壘 — 環境與基礎命令",
+  "description": "學習基礎的 Linux 環境操作與權限觀念",
   "type": "challenge",
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu2204"
   },
-  "steps": [
-    {
-      "title": "任務開始",
-      "markdown": "step1.md"
+  "details": {
+    "steps": [
+      {
+        "title": "基礎環境檢查",
+        "text": "step1.md"
+      },
+      {
+        "title": "身分與檔案權限切換",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+   },
+    "finish": {
+      "text": "finish.md"
     }
-  ]
+  }
 }
