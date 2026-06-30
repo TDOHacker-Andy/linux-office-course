@@ -4,7 +4,7 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "foreground": "step00/background.sh"
+      "foreground": "background.sh"
     },
     "steps": [
       { "title": "Step 1：這個黑黑的畫面到底是什麼？", "text": "step01/step01.md" },
