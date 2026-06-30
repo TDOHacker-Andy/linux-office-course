@@ -3,7 +3,7 @@
   "description": "學習不用滑鼠，用鍵盤指令在電腦裡「空間瞬移」並一秒建立大量資料夾。",
   "type": "challenge",
   "backend": {
-    "imageid": "ubuntu2204"
+    "imageid": "ubuntu"
   },
   "details": {
     "steps": [
