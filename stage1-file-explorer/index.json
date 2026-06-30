@@ -10,11 +10,10 @@
   },
   "details": {
     "steps": [
-      
+      {
         "title": "Step 1: 確認帳號與路徑",
         "text": "step1.md"
-      
-    ],
-   
+      }
+    ]
   }
 }
