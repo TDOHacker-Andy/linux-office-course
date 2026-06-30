@@ -8,7 +8,6 @@
   "background": {
     "script": "background.sh"
   },
-  },
   "details": {
     "steps": [
       {
@@ -27,4 +26,4 @@
       "text": "finish.md"
     }
   }
-
+}
