@@ -6,7 +6,7 @@
     "author": "你的名字",
     "environment": {
       "showide": true,
-      "uilayout": "terminal"
+      "uilayout": "terminal",
       "imageid": "ubuntu"
     },
     "setup": {
