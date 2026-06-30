@@ -7,6 +7,7 @@
     "environment": {
       "showide": true,
       "uilayout": "terminal"
+      "imageid": "ubuntu"
     },
     "setup": {
       "bash": "mkdir -p /root/confusing_project/reports/2025 /root/confusing_project/download && printf 'ID,Name,Region,Sales\\n1,Andy,Taipei,50000\\n2,Bella,Hualien,12000\\n3,Chris,Taichung,45000\\n' > /root/confusing_project/taiwan_customers.txt && echo 'Andy,180hr,28800,加班' > /root/confusing_project/part_time_weekly_report.txt && echo 'Bella,160hr,25600,未加班' >> /root/confusing_project/part_time_weekly_report.txt && echo 'Secret_Key_2026' > /root/confusing_project/download/unknown_file && mkdir -p /root/confusing_project/empty_folder && apt-get update && apt-get install -y zip && zip -qj /root/confusing_project/download/customers.zip /root/confusing_project/taiwan_customers.txt && echo '---環境初始化完成---'"
